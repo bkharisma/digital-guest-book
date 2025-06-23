@@ -2,8 +2,8 @@
 
 ## Langkah-langkah untuk menjalankan proyek:
 
--   Clone repo: `git clone https://github.com/IPDS-BPS-Polinema/Manajemen-Mitra.git`
--   Buka project mitra bps
+-   Clone repo: `[git clone https://github.com/bkharisma/digital-guest-book.git]`
+-   Jalankan perintah `composer install` 
 -   Jalankan perintah `composer update` 
 -   Jalakan perintah `npm install`
 -   Jalankan perintah `npm run dev`
