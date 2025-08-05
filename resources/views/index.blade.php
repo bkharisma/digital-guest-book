@@ -147,6 +147,7 @@
     <div class="tab" id="tab-3">
       <h3>Pelayanan</h3>
 
+      <!--
       <div class="input-group">
         <div class="form-group mb-3">
           <label class="label" for="media" style="color:#000000">Media Pelayanan</label>
@@ -154,6 +155,18 @@
             <option selected="false" disabled="disabled">Silahkan Pilih Media Pelayanan</option>
             @foreach ($media as $p)
             <option value="{{ $p->id }}">{{$p->media_type}}</option>
+            @endforeach
+          </select>
+        </div>
+      </div> -->
+
+      <div class="input-group">
+        <div class="form-group mb-3">
+          <label class="label" for="service" style="color:#000000">Jenis Pelayanan</label>
+          <select class="custom-select my-1 mr-sm-2" name="service" id="inlineFormCustomSelectPref" required>
+            <option selected="false" disabled="disabled">Silahkan Pilih Jenis Pelayanan</option>
+            @foreach ($service as $j)
+            <option value="{{ $j->id }}">{{$j->service_type}}</option>
             @endforeach
           </select>
         </div>
@@ -172,18 +185,6 @@
               @endif
               @endforeach
             </optgroup>
-            @endforeach
-          </select>
-        </div>
-      </div>
-
-      <div class="input-group">
-        <div class="form-group mb-3">
-          <label class="label" for="service" style="color:#000000">Jenis Pelayanan</label>
-          <select class="custom-select my-1 mr-sm-2" name="service" id="inlineFormCustomSelectPref" required>
-            <option selected="false" disabled="disabled">Silahkan Pilih Jenis Pelayanan</option>
-            @foreach ($service as $j)
-            <option value="{{ $j->id }}">{{$j->service_type}}</option>
             @endforeach
           </select>
         </div>
@@ -210,12 +211,25 @@
         </div>
       </div>
 
+            <div class="input-group">
+        <div class="form-group mb-3">
+          <label class="label" for="temu" style="color:#000000">Bertemu</label>
+          <select class="custom-select my-1 mr-sm-2" name="temu" id="inlineFormCustomSelectPref" required>
+            <option selected="false" disabled="disabled">Silahkan Pilih Bertemu</option>
+            @foreach ($temu as $t)
+            <option value="{{ $t->id }}">{{$t->temu_type}}</option>
+            @endforeach
+          </select>
+        </div>
+      </div>
+
+      <!--
       <div class="input-group">
         <label for="data" style="color:#000000">Data</label>
         <textarea type="text" name="data" id="data" placeholder="Silahkan isi data spesifik yang anda perlukan"
           class="form-control" rows="10" cols="55" maxlength="50" value="{{old('data')}}"
           onkeypress="return event.charCode < 48 || event.charCode>57" data-parsley-trigger="keyup" required></textarea>
-      </div>
+      </div> -->
 
       <div class="index-btn-wrapper">
         <div class="index-btn" onclick="run(4, 3);">Previous</div>

@@ -10,6 +10,7 @@ use App\Models\Media;
 use App\Models\Service;
 use App\Models\SubCategory;
 use App\Models\Purpose;
+use App\Models\Temu;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -30,10 +31,11 @@ class GuestController extends Controller
         $media = Media::all();
         $service = Service::all();
         $purpose = Purpose::all();
+        $temu = Temu::all();
         $sub_categories = SubCategory::all();
         $categories = Category::all();
 
-        return view('/index', compact('job','education','media','service','sub_categories','categories','purpose'));
+        return view('/index', compact('job','education','media','service','sub_categories','categories','purpose','temu'));
         return dd(Session::all());
         // $purpose = Purpose::all();
 
@@ -92,7 +94,7 @@ class GuestController extends Controller
                     break;
                 case 3  :
                     $validator = Validator::make($request->all(), [
-                            'media' => 'required|min:1',
+                            //'media' => 'required|min:1',
                             'sub_categories' => 'required|min:1',
                             'service' => 'required|min:1',
                     ]);
@@ -106,7 +108,7 @@ class GuestController extends Controller
                 case 4 :
                     $validator = Validator::make($request->all(), [
                             'purpose' => 'required|min:1',
-                            'data' => 'required|min:30',
+                            //'data' => 'required|min:30',
                     ]);
 
                     if ($validator->passes()) {
@@ -148,6 +150,7 @@ class GuestController extends Controller
             $institute= $request->institute;
             $education = $request->education;
             $purpose = $request->purpose;
+            $temu = $request->temu;
             $sub_categories =$request->sub_categories;
 
             if (Customer::where('hp', $hp)->exists()){
@@ -163,11 +166,12 @@ class GuestController extends Controller
                 */
                $transaction = new Transaction();
                $transaction->id_customer =$idcustomer;
-               $transaction->id_media=$request->media;
+               $transaction->id_media=0;
                $transaction->id_service=$request->service;
                $transaction->id_purpose=$request->purpose;
-               $transaction->data=$request->data;
+               $transaction->data=0;
                $transaction->id_sub_categories=$request->sub_categories;
+               $transaction->id_temu=$request->temu;
                $transaction->save();
 
                Alert::success("Success", "Terimakasih  $name  Sudah menggunakan layanan kami");
@@ -203,10 +207,11 @@ class GuestController extends Controller
 
                $transaction = new Transaction();
                $transaction->id_customer =$idcustomer;
-               $transaction->id_media=$request->media;
+               //$transaction->id_media=$request->media;
                $transaction->id_service=$request->service;
                $transaction->id_purpose=$request->purpose;
-               $transaction->data=$request->data;
+               $transaction->id_temu=$request->temu;
+               //$transaction->data=$request->data;
                $transaction->id_sub_categories=$request->sub_categories;
                $transaction->save();
 

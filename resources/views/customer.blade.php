@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Customer - BPS Kota Malang</title>
+    <title>Customer - Politeknik Pariwisata Palembang</title>
     <style>
         #emp {
             font-family: Arial, Helvetica, sans-serif;
@@ -45,10 +45,8 @@
     <tr>
         <td><img src="{{public_path('/assets/img/logo.png')}}" style="width: 100px; height: 100px"></td>
         <td>
-            <h2 style="text-align: center">Badan Pusat Statistik (BPS)</h2>
-            <h3 style="text-align: center"><b>Kota Malang<b></h3>
-            <h4 style="text-align: center"><i>Jl. Janti Bar. No.47, Bandungrejosari, Kec. Sukun, Kota Malang, Jawa Timur
-                    65148<i></h4>
+            <h2 style="text-align: center">Politeknik Pariwisata Palembang (BPS)</h2>
+            <h4 style="text-align: center"><i>Jl Silaberant No 10 Jakabarin, Palembang, Sumatera Selatan<i></h4>
         </td>
     </tr>
     <tr>
@@ -64,7 +62,7 @@
         <h2>Data Buku Tamu</h2><br>
     </div>
     <table id="emp">
-        <title>Customer - BPS</title>
+        <title>Customer</title>
         <thead>
             <tr>
                 <th>No</th>

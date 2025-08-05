@@ -64,6 +64,7 @@
                     <a class="collapse-item" href="{{route('category.index')}}">Kategori</a>
                     <a class="collapse-item" href="{{route('subcategory.index')}}">Sub Kategori</a>
                     <a class="collapse-item" href="{{route('purpose.index')}}">Tujuan</a>
+                    <a class="collapse-item" href="{{route('temu.index')}}">Temu</a>
                 </div>
             </div>
     </li>

@@ -18,6 +18,7 @@ use App\Http\Controllers\PurposeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CustController;
 use App\Http\Controllers\TransController;
+use App\Http\Controllers\TemuController;
 use App\Http\Controllers\RingkasanController;
 
 // Customer Page - User
@@ -81,6 +82,9 @@ Route::resource('subcategory', SubCategoryController::class);
 
 //Purpose Page
 Route::resource('purpose', PurposeController::class);
+
+//Temu Page
+Route::resource('temu', TemuController::class);
 
 //Login Page
 Route::group(['prefix'=>config('admin.prefix'),'namespace'=>'App\\Http\\Controllers',],function (){

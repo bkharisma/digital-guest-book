@@ -9,6 +9,7 @@ use App\Models\Service;
 use App\Models\Transaction;
 use App\Models\Media;
 use App\Models\Purpose;
+use App\Models\Temu;
 
 class DashboardController extends Controller
 {
@@ -58,7 +59,7 @@ class DashboardController extends Controller
         $purpose3 = Transaction::where('id_purpose', '=', 3)->count();
         $purpose4 = Transaction::where('id_purpose', '=', 4)->count();
         $purpose5 = Transaction::where('id_purpose', '=', 5)->count();
-        
+
         return view('dashboard', compact(
             'education','smp','sma','diploma','sarjana','magister','doktor',
             'customer','asn','student','lecturer','researcher','general_job',
