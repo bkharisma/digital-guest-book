@@ -34,13 +34,6 @@ class RingkasanController extends Controller
         $researcher = Customer::where('id_job', '=', 4)->count();
         $general_job = Customer::where('id_job', '=', 5)->count();
 
-        $media = Media::count();
-        $media1 = Transaction::where('id_media', '=', 1)->count();
-        $media2 = Transaction::where('id_media', '=', 2)->count();
-        $media3 = Transaction::where('id_media', '=', 3)->count();
-        $media4 = Transaction::where('id_media', '=', 4)->count();
-        $media5 = Transaction::where('id_media', '=', 5)->count();
-
         $service = Service::count();
         $service1 = Transaction::where('id_service', '=', 1)->count();
         $service2 = Transaction::where('id_service', '=', 2)->count();
@@ -53,11 +46,10 @@ class RingkasanController extends Controller
         $purpose3 = Transaction::where('id_purpose', '=', 3)->count();
         $purpose4 = Transaction::where('id_purpose', '=', 4)->count();
         $purpose5 = Transaction::where('id_purpose', '=', 5)->count();
-        
+
         return view('Pengguna/index', compact(
             'education','smp','sma','diploma','sarjana','magister','doktor',
             'customer','asn','student','lecturer','researcher','general_job',
-            'media','media1','media2','media3','media4','media5',
             'service','service1','service2','service3','service4',
             'purpose','purpose1','purpose2','purpose3','purpose4','purpose5'
         ));

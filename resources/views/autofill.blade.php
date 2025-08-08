@@ -14,7 +14,7 @@
     <form action="{{ url ('/simpan-bukutamu')}}" method="POST" class="sigin-form">
         @csrf
         <h1 class="text-center">BUKU TAMU</h1>
-        <h2 class="text-center">Badan Pusat Statistik Kota Malang</h2>
+        <h2 class="text-center">Politeknik Pariwisata Palembang</h2>
 
         <!-- Progress bar -->
         <div class="progressbar">

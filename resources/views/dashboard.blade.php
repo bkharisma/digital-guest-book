@@ -135,7 +135,7 @@
         // Menampilkan visualisasi Data Customer - Berdasarkan Pendidikan
 window.onload = function () {
 	var chart = new CanvasJS.Chart("chartContainer", {
-		data: [              
+		data: [
 		{
 			type: "column",
             toolTipContent: "<b>{label}</b><br>Jumlah: {y} orang",
@@ -198,18 +198,7 @@ var chartb = new CanvasJS.Chart("chartbContainer", {
 				endValue: 210
 				}
 		] }
-	},
-	data: [{
-		type: "bar",
-		toolTipContent: "<b>{label}</b><br>Jumlah: {y} transaksi",
-		dataPoints: [
-			{ label: "Add-Stat-Whatsapp", y: {{$media1}}},
-			{ label: "Email", y:  {{$media2}}},
-			{ label: "Social Media - Facebook", y:  {{$media3}}},
-			{ label: "Social Media - Instagram", y: {{$media4}}},
-			{ label: "Pelayanan Statistik Terpadu", y: {{$media5}}}
-		]
-	}]
+	}
 });
 chartb.render();
 

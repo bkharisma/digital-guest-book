@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Customer - BPS Kota Malang</title>
+    <title>Customer - Poltekpar Palembang</title>
     <style>
         #emp {
             font-family: Arial, Helvetica, sans-serif;
@@ -45,10 +45,8 @@
     <tr>
         <td><img src="{{public_path('/assets/img/logo.png')}}" style="width: 100px; height: 100px"></td>
         <td>
-            <h2 style="text-align: center">Badan Pusat Statistik (BPS)</h2>
-            <h3 style="text-align: center"><b>Kota Malang<b></h3>
-            <h4 style="text-align: center"><i>Jl. Janti Bar. No.47, Bandungrejosari, Kec. Sukun, Kota Malang, Jawa Timur
-                    65148<i></h4>
+            <h2 style="text-align: center">Politeknik Pariwisata Palembang</h2>
+            <h4 style="text-align: center"><i>Jl. Silaberanti no 10, Jakabaring, Palembang, Sumatera Selatan<i></h4>
         </td>
     </tr>
     <tr>
@@ -61,9 +59,9 @@
 <body>
     <div class="card-header">
         <h2>Ringkasan - Data Buku Tamu</h2>
-        <p style="text-align: justify">Buku tamu <strong>BPS - Kota Malang</strong> merupakan buku yang berisi daftar
+        <p style="text-align: justify">Buku tamu <strong>Politeknik Pariwisata Palembang</strong> merupakan buku yang berisi daftar
             pelanggan yang bertujuan dalam pemenuhan kebutuhan data.
-            Buku tamu ini bisa menjadi patokan dalam evaluasi BPS Kota Malang dalam melayani masyarakat. Berikut ini
+            Buku tamu ini bisa menjadi patokan dalam evaluasi Politeknik Pariwisata Palembang dalam melayani masyarakat. Berikut ini
             ringkasan data buku tamu:</p>
     </div>
     <div class="card-header">
@@ -133,27 +131,7 @@
             </tr>
         </tbody>
     </table>
-    <h4>4. Jumlah Transaksi - Berdasarkan Media</h4>
-    <table id="emp" border="2">
-        <thead class="thead-dark">
-            <tr>
-                <th>WA</th>
-                <th>Email</th>
-                <th>Facebook</th>
-                <th>Instagram</th>
-                <th>PST</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{$media1}}</td>
-                <td>{{$media2}}</td>
-                <td>{{$media3}}</td>
-                <td>{{$media4}}</td>
-                <td>{{$media5}}</td>
-            </tr>
-        </tbody>
-    </table>
-    <h4>5. Jumlah Transaksi - Berdasarkan Tujuan</h4>
+    <h4>4. Jumlah Transaksi - Berdasarkan Tujuan</h4>
     <table id="emp" border="2">
         <thead class="thead-dark">
             <tr>

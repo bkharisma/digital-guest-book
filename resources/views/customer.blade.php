@@ -45,8 +45,8 @@
     <tr>
         <td><img src="{{public_path('/assets/img/logo.png')}}" style="width: 100px; height: 100px"></td>
         <td>
-            <h2 style="text-align: center">Politeknik Pariwisata Palembang (BPS)</h2>
-            <h4 style="text-align: center"><i>Jl Silaberant No 10 Jakabarin, Palembang, Sumatera Selatan<i></h4>
+            <h2 style="text-align: center">Politeknik Pariwisata Palembang</h2>
+            <h4 style="text-align: center"><i>Jl Silaberant No 10 Jakabaring, Palembang, Sumatera Selatan<i></h4>
         </td>
     </tr>
     <tr>

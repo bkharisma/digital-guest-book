@@ -15,16 +15,6 @@
             value="{{$transaction->id_customer}}" readonly>
         </div>
         <div class="form-group mb-3">
-          <label class="label" for="media">Id Media</label>
-          <select class="custom-select my-1 mr-sm-2" name="media">
-            <option disabled value>Pilih Media</option>
-            <option value="{{$transaction->id_media}}">{{$transaction->media->media_type}}</option>
-            @foreach ($media as $e)
-            <option value="{{ $e->id }}">{{$e->media_type}}</option>
-            @endforeach
-          </select>
-        </div>
-        <div class="form-group mb-3">
           <label class="label" for="media">Id Pelayanan</label>
           <select class="custom-select my-1 mr-sm-2" name="service">
             <option disabled value>Pilih Pelayanan</option>

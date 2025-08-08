@@ -63,8 +63,6 @@
                     <th scope="col">No</th>
                     <th scope="col"><br>Customer</th>
                     <th scope="col">Status Transaksi</th>
-                    {{-- <th scope="col">Id Media</th>
-                    <th scope="col">Id <br> Pelayanan</th> --}}
                     <th scope="col">Feedback <br>Pelayanan</th>
                     <th scope="col">Feedback <br>Sarana</th>
                     <th scope="col">Feedback <br>Kualitas</th>

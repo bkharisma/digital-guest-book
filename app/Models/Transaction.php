@@ -11,7 +11,8 @@ class Transaction extends Model
     use HasFactory;
     protected $guarded=['id'];
     protected $table = "transactions";
-    protected $fillable = ['id_customer','id_media','id_service','id_purpose','id_temu','data','id_sub_categories','status'];
+    protected $fillable = ['id_customer','id_service','id_purpose','id_temu','data','id_sub_categories','status'];
+    //protected $fillable = ['id_customer','id_media','id_service','id_purpose','id_temu','data','id_sub_categories','status'];
 
     // public function Customer(){
     //     return $this->belongsTo(Customer::class);
@@ -20,9 +21,9 @@ class Transaction extends Model
         return $this->belongsTo(Customer::class, 'id_customer');
     }
 
-    public function Media(){
-        return $this->belongsTo(Media::class, 'id_media');
-    }
+    //public function Media(){
+    //    return $this->belongsTo(Media::class, 'id_media');
+    //}
 
     public function Service(){
         return $this->belongsTo(Service::class, 'id_service');
@@ -60,12 +61,13 @@ class Transaction extends Model
     public static function getTransaction(){
         $records = DB::table('transactions')
         ->join('customer', 'transactions.id_customer', '=', 'customer.id')
-        ->join('media', 'transactions.id_media', '=', 'media.id')
+        //->join('media', 'transactions.id_media', '=', 'media.id')
         ->join('service', 'transactions.id_service', '=', 'service.id')
         ->join('purpose', 'transactions.id_purpose', '=', 'purpose.id')
         ->join('temu', 'transactions.id_temu', '=', 'temu.id')
         ->join('sub_categories', 'transactions.id_sub_categories', '=', 'sub_categories.id')
-        ->select('customer.name', 'media.media_type', 'service.service_type','purpose.purpose_type','sub_categories.sub_categories_type')
+        ->select('customer.name', 'service.service_type','purpose.purpose_type','sub_categories.sub_categories_type')
+        //->select('customer.name', 'media.media_type', 'service.service_type','purpose.purpose_type','sub_categories.sub_categories_type')
         ->get()->toArray();
 
         return $records;

@@ -145,21 +145,7 @@
     </div>
 
     <div class="tab" id="tab-3">
-      <h3>Pelayanan</h3>
-
-      <!--
-      <div class="input-group">
-        <div class="form-group mb-3">
-          <label class="label" for="media" style="color:#000000">Media Pelayanan</label>
-          <select class="custom-select my-1 mr-sm-2" name="media" id="inlineFormCustomSelectPref" required>
-            <option selected="false" disabled="disabled">Silahkan Pilih Media Pelayanan</option>
-            @foreach ($media as $p)
-            <option value="{{ $p->id }}">{{$p->media_type}}</option>
-            @endforeach
-          </select>
-        </div>
-      </div> -->
-
+      <h>Pelayanan</h3>
       <div class="input-group">
         <div class="form-group mb-3">
           <label class="label" for="service" style="color:#000000">Jenis Pelayanan</label>

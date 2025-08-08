@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\Job;
 use App\Models\Education;
-use App\Models\Media;
+//use App\Models\Media;
 use App\Models\Service;
 use App\Models\SubCategory;
 use App\Models\Purpose;
@@ -28,14 +28,13 @@ class GuestController extends Controller
     public function formTamu() {
         $job = Job::all();
         $education = Education::all();
-        $media = Media::all();
         $service = Service::all();
         $purpose = Purpose::all();
         $temu = Temu::all();
         $sub_categories = SubCategory::all();
         $categories = Category::all();
 
-        return view('/index', compact('job','education','media','service','sub_categories','categories','purpose','temu'));
+        return view('/index', compact('job','education','service','sub_categories','categories','purpose','temu'));
         return dd(Session::all());
         // $purpose = Purpose::all();
 
@@ -166,10 +165,10 @@ class GuestController extends Controller
                 */
                $transaction = new Transaction();
                $transaction->id_customer =$idcustomer;
-               $transaction->id_media=0;
+               //$transaction->id_media=0;
                $transaction->id_service=$request->service;
                $transaction->id_purpose=$request->purpose;
-               $transaction->data=0;
+               //$transaction->data=0;
                $transaction->id_sub_categories=$request->sub_categories;
                $transaction->id_temu=$request->temu;
                $transaction->save();

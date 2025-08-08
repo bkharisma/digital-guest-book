@@ -45,10 +45,8 @@
     <tr>
         <td><img src="{{public_path('/assets/img/logo.png')}}" style="width: 100px; height: 100px"></td>
         <td>
-            <h2 style="text-align: center">Badan Pusat Statistik (BPS)</h2>
-            <h3 style="text-align: center"><b>Kota Malang<b></h3>
-            <h4 style="text-align: center"><i>Jl. Janti Bar. No.47, Bandungrejosari, Kec. Sukun, Kota Malang, Jawa Timur
-                    65148<i></h4>
+            <h2 style="text-align: center">Politeknik Pariwisata Palembang</h2>
+            <h4 style="text-align: center"><i>Jl Silabertani No 10, Jakabaring, Palembang, Sumatera Selatan<i></h4>
         </td>
     </tr>
     <tr>
@@ -69,7 +67,6 @@
             <tr>
                 <th>No</th>
                 <th>Id <br>Customer </th>
-                <th>Id Media</th>
                 <th>Id <br> Pelayanan</th>
                 <th>Tujuan</th>
                 <th>Kebutuhan Data</th>
@@ -80,7 +77,6 @@
             <tr>
                 <td>{{ $loop->iteration}}</td>
                 <td>{{ $item->customer->name }}</td>
-                <td>{{ $item->media->media_type}}</td>
                 <td>{{ $item->service->service_type }}</td>
                 <td>{{ $item->purpose->purpose_type}}</td>
                 <td>{{ $item->subcategory->sub_categories_type}}</td>

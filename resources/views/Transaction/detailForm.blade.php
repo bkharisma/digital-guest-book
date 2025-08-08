@@ -12,11 +12,6 @@
                         <td>{{ $transaction->customer->name }}</td>
                     </tr>
                     <tr>
-                        <td>Media</td>
-                        <td>:</td>
-                        <td>{{ $transaction->media->media_type}}</td>
-                    </tr>
-                    <tr>
                         <td>Pelayanan</td>
                         <td>:</td>
                         <td>{{ $transaction->service->service_type }}</td>
