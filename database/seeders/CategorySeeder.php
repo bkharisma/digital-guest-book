@@ -17,16 +17,10 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create(
-            ['categories_type'     => 'Sosial dan Kependudukan']
+            ['categories_type'     => 'Layanan Akademik']
         );
         Category::create(
-            ['categories_type'     => 'Ekonomi dan Perdagangan']
-        );
-        Category::create(
-            ['categories_type'     => 'Pertanian dan Pertambangan']
-        );
-        Category::create(
-            ['categories_type'     => 'Umum (lain-lain)']
+            ['categories_type'     => 'Layanan Umum']
         );
     }
 }

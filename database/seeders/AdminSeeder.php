@@ -17,24 +17,24 @@ class AdminSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name'     => 'Wahyu Fajar Robyansyah',
-            'email'    => 'wahyufajar3110@gmail.com',
+            'name'     => 'Budi Kharisma Setiawan',
+            'email'    => 'bkharisma@poltekpar-palembang.ac.id',
             'role'     => 'Super Admin',
-            'password' => bcrypt('goesfa3110'),
+            'password' => bcrypt('Poltekpar123!@#'),
         ]);
 
         User::create([
-            'name'     => 'Darman Saragih',
-            'email'    => 'darman123@gmail.com',
+            'name'     => 'Ahmad Mirza Rizky Pramanda',
+            'email'    => 'ahmad_mirza@poltekpar-palembang.ac.id',
             'role'     => 'Super Admin',
-            'password' => bcrypt('admin1234'),
+            'password' => bcrypt('Poltekpar123!@#'),
         ]);
 
         User::create([
-            'name'     => 'Qorina Anindhita',
-            'email'    => 'orin123@gmail.com',
+            'name'     => 'Muhammad Ridho Setyawan',
+            'email'    => 'rs@poltekpar-palembang.ac.id',
             'role'     => 'Super Admin',
-            'password' => bcrypt('admin1234'),
+            'password' => bcrypt('Poltekpar123!@#'),
         ]);
     }
 }

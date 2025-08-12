@@ -16,16 +16,10 @@ class ServiceSeeder extends Seeder
     public function run()
     {
         Service::create(
-            ['service_type'     => 'Permintaan Data']
+            ['service_type'     => 'Layanan Akademik']
         );
         Service::create(
-            ['service_type'     => 'Konsultasi Data']
-        );
-        Service::create(
-            ['service_type'     => 'Rekomendasi Data Sektoral']
-        );
-        Service::create(
-            ['service_type'     => 'Umum (lain-lain)']
+            ['service_type'     => 'Layanan Umum']
         );
     }
 }

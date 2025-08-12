@@ -2,8 +2,12 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('dashboard')}}">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-card d-none d-lg-flex">
+            <img class="sidebar-card-illustration mb-2"
+            src="{{ asset('pengguna/assets/images/logo-ppp.png') }}"
+            alt="...">
+            <p class="text-center mb-2">Politeknik Pariwisata Palembang</p><br>
+            <a class="btn btn-success btn-sm" href="https://poltekpar-palembang.ac.id/">Kunjungi Website</a>
         </div>
         <div class="sidebar-brand-text mx-3">Aplikasi Bukutamu</div>
     </a>
@@ -38,12 +42,6 @@
 
     @can('role',['Super Admin','Admin'])
     <li class="nav-item">
-        <a class="nav-link" href="{{url('/')}}">
-            <i class="fas fa-users"></i>
-            <span>Menu Beranda</span></a>
-    </li>
-
-    <li class="nav-item">
         <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
             aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
@@ -75,12 +73,11 @@
             <span>Menu Transaksi</span></a>
     </li>
 
-    <div class="sidebar-card d-none d-lg-flex">
-        <img class="sidebar-card-illustration mb-2"
-            src="{{ asset('pengguna/assets/images/logo-ppp.png') }}"
-            alt="...">
-        <p class="text-center mb-2"><strong style="text-align: center">Politeknik Pariwisata Palembang</strong><br>
-        <a class="btn btn-success btn-sm" href="https://poltekpar-palembang.ac.id/">Kunjungi Website</a>
-    </div>
+        <li class="nav-item">
+        <a class="nav-link" href="{{url('/')}}">
+            <i class="fas fa-users"></i>
+            <span>Tampilan Beranda</span></a>
+    </li>
+
 </ul>
 @endcan

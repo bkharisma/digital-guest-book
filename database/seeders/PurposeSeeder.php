@@ -16,19 +16,10 @@ class PurposeSeeder extends Seeder
     public function run()
     {
         Purpose::create(
-            ['purpose_type'     => 'Skripsi']
+            ['purpose_type'     => 'Kunjungan']
         );
         Purpose::create(
-            ['purpose_type'     => 'Tesis']
-        );
-        Purpose::create(
-            ['purpose_type'     => 'Disertasi']
-        );
-        Purpose::create(
-            ['purpose_type'     => 'Penelitian']
-        );
-        Purpose::create(
-            ['purpose_type'     => 'Umum (lain-lain)']
+            ['purpose_type'     => 'Permintaan Data dan Informasi']
         );
     }
 }
