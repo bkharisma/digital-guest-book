@@ -25,6 +25,7 @@ use Validator;
 
 class GuestController extends Controller
 {
+
     public function formTamu() {
         $job = Job::all();
         $education = Education::all();
@@ -127,7 +128,9 @@ class GuestController extends Controller
 
     }
 
-    public function saveGuest(Request $request){
+    public function saveGuest(Request $request)
+    {
+
         /**
          * Validate - Laravel Basic - bimasakti.kr
          * #1 Define validate Submit Button

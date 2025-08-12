@@ -140,6 +140,8 @@
       transition: width 0.4s ease;
     }
   </style>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 </head>
 <body class="py-8 px-4">
   <!-- Header dengan identitas website -->
@@ -344,7 +346,7 @@
             </select>
           </div>
         </div>
-
+        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"></div>
         <div class="flex justify-between mt-8">
           <button type="button" class="btn btn-secondary" onclick="run(4, 3);">Kembali</button>
           <button type="submit" name="submit" class="btn btn-primary bg-blue-600 hover:bg-blue-700">Kirim Data</button>
